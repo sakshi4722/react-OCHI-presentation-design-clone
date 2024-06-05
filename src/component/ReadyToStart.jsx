@@ -16,10 +16,10 @@ const ReadyToStart = () => {
     });
   });
   return (
-    <div className=" relative">
+    <div className=" relative w-full min-h-screen">
       <div
         className='  data-scroll
-        data-scroll-speed="-.7" w-full h-screen flex items-center justify-center uppercase text-zinc-900 bg-[#CDEA68] text-[30vh] font-["Text Founders Grotesk X-Cond SmBd"] tracking-tight leading-none font-bold'
+        data-scroll-speed="-.7" w-full min-h-screen flex items-center justify-center uppercase text-zinc-900 bg-[#CDEA68] text-[180px]  font-["Text Founders Grotesk X-Cond SmBd"] tracking-tight leading-none font-bold'
       >
         <p className=" text-center">
           {" "}
@@ -27,8 +27,8 @@ const ReadyToStart = () => {
           to start <br /> the project?
         </p>
       </div>
-      <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
-        <div className=" flex items-center justify-center w-[15vw] h-[15vw] rounded-full bg-zinc-100">
+      <div className="absolute flex gap-10 top-[40%] left-1/2 -translate-x-[50%] -translate-y-[50%]">
+        <div className=" flex items-center justify-center w-[13vw] h-[13vw] rounded-full bg-zinc-100">
           <div className=" relative w-2/3 h-2/3 rounded-full bg-zinc-900">
             <div
               style={{
@@ -40,7 +40,7 @@ const ReadyToStart = () => {
             </div>
           </div>
         </div>
-        <div className=" flex items-center justify-center w-[15vw] h-[15vw] rounded-full bg-zinc-100">
+        <div className=" flex items-center justify-center w-[13vw] h-[13vw] rounded-full bg-zinc-100">
           <div className=" relative w-2/3 h-2/3 flex items-center justify-center rounded-full bg-zinc-900">
             <div
               style={{
