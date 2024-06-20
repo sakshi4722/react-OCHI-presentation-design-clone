@@ -59,6 +59,7 @@
 
 // export default ReadyToStart;
 
+
 import React, { useEffect, useState } from "react";
 
 const ReadyToStart = () => {
@@ -85,29 +86,35 @@ const ReadyToStart = () => {
 
   return (
     <div className="relative w-full min-h-screen">
-      <div
-        className='data-scroll data-scroll-speed="-.7" w-full min-h-screen flex items-center justify-center uppercase text-zinc-900 bg-[#CDEA68] text-[12vw] md:text-[180px] font-["Text Founders Grotesk X-Cond SmBd"] tracking-tight leading-none font-bold'
-      >
+      <div className="w-full min-h-screen flex items-center justify-center uppercase text-zinc-900 bg-[#CDEA68] text-8xl font-['Text Founders Grotesk X-Cond SmBd'] tracking-tight leading-none font-bold">
         <p className="text-center">
           ready <br />
           to start <br /> the project?
         </p>
       </div>
-      <div className="absolute flex flex-col md:flex-row gap-5 md:gap-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        {Array(2).fill(
-          <div className="flex items-center justify-center w-[30vw] h-[30vw] md:w-[13vw] md:h-[13vw] rounded-full bg-zinc-100">
-            <div className="relative w-2/3 h-2/3 rounded-full bg-zinc-900">
-              <div
-                style={{
-                  transform: `translate(-50%, -50%) rotate(${rotate}deg)`,
-                }}
-                className="line absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-10"
-              >
-                <div className="w-5 h-5 md:w-10 md:h-10 rounded-full bg-zinc-100"></div>
-              </div>
-            </div>
+
+      <div className="absolute flex gap-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="flex items-center justify-center w-24 h-24 md:w-32 md:h-32 rounded-full bg-zinc-100">
+          <div className="relative w-2/3 h-2/3 rounded-full bg-zinc-900">
+            <div
+              style={{
+                transform: `translate(-50%, -50%) rotate(${rotate}deg)`,
+              }}
+              className="line absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-3 md:h-4 bg-zinc-100 rounded-full"
+            ></div>
           </div>
-        )}
+        </div>
+
+        <div className="flex items-center justify-center w-24 h-24 md:w-32 md:h-32 rounded-full bg-zinc-100">
+          <div className="relative w-2/3 h-2/3 rounded-full bg-zinc-900">
+            <div
+              style={{
+                transform: `translate(-50%, -50%) rotate(${rotate}deg)`,
+              }}
+              className="line absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-3 md:h-4 bg-zinc-100 rounded-full"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
   );

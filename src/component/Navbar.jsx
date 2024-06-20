@@ -50,7 +50,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="fixed z-[999] w-full px-5 md:px-20 py-4 md:py-8 font-['Neue Montreal'] flex justify-between items-center bg-zinc-900">
+    <div className="fixed z-[999] w-full px-6 md:px-20 py-4 md:py-8 font-['Neue Montreal'] flex justify-between items-center">
       <div className="logo">
         <svg
           width="72"
@@ -81,15 +81,9 @@ const Navbar = () => {
           ></path>
         </svg>
       </div>
-      <div className="link flex gap-5 md:gap-10">
+      <div className="link flex flex-wrap gap-6 md:gap-10">
         {["Services", "Our Work", "About Us", "Insights", "Contact"].map((item, index) => (
-          <a
-            key={index}
-            className={`text-sm md:text-lg capitalize font-light ${index === 4 && "ml-16 md:ml-32"}`}
-            href="#"
-          >
-            {item}
-          </a>
+          <a key={index} className={`text-base md:text-lg capitalize font-light ${index === 4 ? "ml-6 md:ml-10" : ""}`}>{item}</a>
         ))}
       </div>
     </div>
